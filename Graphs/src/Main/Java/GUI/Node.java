@@ -15,11 +15,11 @@ import javafx.scene.text.Font;
 import javafx.util.Duration;
 
 public class Node {
-    Shape circle;
-    double x;
-    double y;
-    double radius;
-    String label;
+    private Shape circle;
+    private double x;
+    private double y;
+    private double radius;
+    private String label;
 
 
     public Node(double x, double y, double radius, String label) {
@@ -50,43 +50,10 @@ public class Node {
         circle.setFill(Color.RED);
     }
 
-    public Shape getCircle() {
-        return circle;
-    }
-
-    public void setCircle(Shape circle) {
-        this.circle = circle;
-    }
-
     public double getX() {
         return x;
     }
-
-    public void setX(double x) {
-        this.x = x;
-    }
-
     public double getY() {
         return y;
-    }
-
-    public void setY(double y) {
-        this.y = y;
-    }
-
-    public double getRadius() {
-        return radius;
-    }
-
-    public void setRadius(double radius) {
-        this.radius = radius;
-    }
-
-    public String getLabel() {
-        return label;
-    }
-
-    public void setLabel(String label) {
-        this.label = label;
     }
 }

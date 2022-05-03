@@ -1,8 +1,8 @@
 package Main.Java.MVC;
 
 public class Controller {
-    Model model;
-    View view;
+    private Model model;
+    private View view;
 
     public void draw(String label){
         view.drawNodes(label);
@@ -19,6 +19,14 @@ public class Controller {
     public void doBFS(String label) {
         System.out.println("Calling BFS");
         model.breadthFirstTraversal(label);
+    }
+
+    public void setModel(Model model) {
+        this.model = model;
+    }
+
+    public void setView(View view) {
+        this.view = view;
     }
 
     public void doDFS(String label) {

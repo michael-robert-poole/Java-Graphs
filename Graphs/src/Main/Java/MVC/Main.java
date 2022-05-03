@@ -9,23 +9,17 @@ public class Main extends Application {
     public static void main(String[] args) {
         launch(args);
     }
-    public void start(Stage window) throws InterruptedException {
+    public void start(Stage window) {
         Model model = new Model();
         View view = new View();
         Controller controller = new Controller();
 
-        model.controller = controller;
-        controller.model = model;
-        controller.view = view;
+        model.setController(controller);
+        controller.setModel(model);
+        controller.setView(view);
         view.controller = controller;
         view.start(window);
 
         model.getGraph();
-
-
-        //model.depthFirstTraversal("Bob");
-
-
-       // System.out.println(model.depthFirstTraversal("Bob"));
     }
 }
