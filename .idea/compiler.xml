@@ -9,7 +9,7 @@
         <module name="Java-Graph-BFS-DFS" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
+    <bytecodeTargetLevel target="11">
       <module name="Java-Graph-BFS-DFS" target="11" />
     </bytecodeTargetLevel>
   </component>
